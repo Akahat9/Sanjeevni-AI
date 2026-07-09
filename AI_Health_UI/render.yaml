@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ai-health-assistant
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r AI_Health_UI/requirements.txt"
+    startCommand: "gunicorn --chdir AI_Health_UI app:app --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 180"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: ALLOWED_ORIGINS
+        value: "https://ai-power-structural-health-m-s.web.app"
+      - key: API_KEY
+        generateValue: true

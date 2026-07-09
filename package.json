@@ -1,0 +1,12 @@
+{
+  "name": "healthcare-project",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix web-app run dev",
+    "build": "npm --prefix web-app run build",
+    "deploy": "npm run build && npx firebase-tools deploy --only hosting"
+  },
+  "devDependencies": {
+    "firebase-tools": "^14.18.0"
+  }
+}

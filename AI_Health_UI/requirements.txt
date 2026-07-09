@@ -1,0 +1,12 @@
+Flask==3.1.2
+flask-cors==6.0.1
+python-dotenv==1.1.1
+gunicorn==23.0.0
+waitress==3.0.2
+firebase-admin
+joblib
+scikit-learn==1.7.2
+pandas==2.2.2
+numpy==1.26.4
+pytest==8.3.5
+

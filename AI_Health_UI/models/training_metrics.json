@@ -1,0 +1,119 @@
+{
+  "heart": {
+    "selected_model": "hist_gradient_boosting",
+    "rows_after_deduplication": 1000,
+    "features": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "class_counts": {
+      "1": 580,
+      "0": 420
+    },
+    "candidates": {
+      "logistic_regression": {
+        "accuracy": 0.98,
+        "precision": 0.9827586206896551,
+        "recall": 0.9827586206896551,
+        "macro_f1": 0.9794745484400657,
+        "roc_auc": 0.9982553366174055
+      },
+      "hist_gradient_boosting": {
+        "accuracy": 0.995,
+        "precision": 0.9914529914529915,
+        "recall": 1.0,
+        "macro_f1": 0.994860065277171,
+        "roc_auc": 1.0
+      }
+    }
+  },
+  "diabetes": {
+    "selected_model": "hist_gradient_boosting",
+    "rows_after_deduplication": 168899,
+    "features": [
+      "HighBP",
+      "HighChol",
+      "CholCheck",
+      "BMI",
+      "Smoker",
+      "Stroke",
+      "HeartDiseaseorAttack",
+      "PhysActivity",
+      "HvyAlcoholConsump",
+      "AnyHealthcare",
+      "NoDocbcCost",
+      "GenHlth",
+      "MentHlth",
+      "Sex",
+      "Age",
+      "Income"
+    ],
+    "class_counts": {
+      "0": 129229,
+      "1": 39670
+    },
+    "candidates": {
+      "logistic_regression": {
+        "accuracy": 0.7107756068679693,
+        "precision": 0.4329731308411215,
+        "recall": 0.7474161835139904,
+        "macro_f1": 0.6677987639032201,
+        "roc_auc": 0.797023284607491
+      },
+      "hist_gradient_boosting": {
+        "accuracy": 0.7068679692125518,
+        "precision": 0.4320066334991708,
+        "recall": 0.7880010083186287,
+        "macro_f1": 0.6693854161645929,
+        "roc_auc": 0.8114766968908024
+      }
+    }
+  },
+  "liver": {
+    "selected_model": "hist_gradient_boosting",
+    "rows_after_deduplication": 19368,
+    "features": [
+      "Age",
+      "Gender",
+      "Total_Bilirubin",
+      "Direct_Bilirubin",
+      "Alkaline_Phosphotase",
+      "Alamine_Aminotransferase",
+      "Aspartate_Aminotransferase",
+      "Total_Protiens",
+      "Albumin",
+      "Albumin_and_Globulin_Ratio"
+    ],
+    "class_counts": {
+      "1": 13811,
+      "0": 5557
+    },
+    "candidates": {
+      "logistic_regression": {
+        "accuracy": 0.6463603510583377,
+        "precision": 0.9142857142857143,
+        "recall": 0.556118754525706,
+        "macro_f1": 0.638591152538615,
+        "roc_auc": 0.76463691465365
+      },
+      "hist_gradient_boosting": {
+        "accuracy": 0.9971605575632422,
+        "precision": 0.998911860718172,
+        "recall": 0.997103548153512,
+        "macro_f1": 0.9965359684489756,
+        "roc_auc": 0.999362168483895
+      }
+    }
+  }
+}
